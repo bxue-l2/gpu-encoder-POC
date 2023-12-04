@@ -1,0 +1,3 @@
+LD_LIBRARY_PATH=${PWD}${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} go run main.g
+
+nvcc --ptxas-options=-v --compiler-options '-fPIC' -o libvectoradd.so --shared vectoradd.cu
